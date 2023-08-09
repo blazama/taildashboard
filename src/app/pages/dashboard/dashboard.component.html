@@ -1,1 +1,83 @@
-<app-sidebar></app-sidebar>
+<div class="h-screen flex">
+    <app-sidebar></app-sidebar>
+    <div class="w-screen flex flex-col">
+        <div class="flex flex-row justify-between bg-slate-600 text-gray-400 border-b-2 border-gray-400">
+            <div class="p-4 border-r-2 border-gray-400">Web Interface</div>
+            <div class="p-4 border-r-2 border-gray-400">Search</div>
+            <div class="p-4">User component</div>
+        </div>
+        <div class="h-full flex flex-row">
+            <aside class="flex flex-col justify-between bg-slate-800 w-40 border-r-2 border-gray-400 text-white">
+                <!-- Sidebar Dashboard -->
+                <div class=" p-4">
+                    <h3 class="mb-4 text-gray-400">Dashboards</h3>
+                    <ul class="text-sm">
+                        <li class="p-1">Messages</li>
+                        <li class="p-1">Notifications</li>
+                        <li class="p-1">Friends</li>
+                        <li class="p-1">Messages</li>
+                        <li class="p-1">Calendar</li>
+                        <li class="p-1">Users</li>
+                    </ul>
+                </div>
+                <!-- Sidebar Contacts -->
+                <div class="border-t-2 border-gray-400 p-4">
+                    <h3 class="mb-4 text-gray-400">Contacts</h3>
+                    <ul class="text-sm">
+                        <li class="p-1">Lisa Simpson</li>
+                        <li class="p-1">Ricky Morty</li>
+                        <li class="p-1 text-gray-400">Ariel Flounder</li>
+                        <li class="p-1 text-gray-400">Pini Pon</li>
+                        <li class="p-1 text-gray-400">Yoda Johnson</li>
+                    </ul>
+                </div>
+                <div class="border-t-2 border-gray-400 p-4">
+                    <ul class="flex flex-row justify-between text-gray-400">
+                        <li class="p-1 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5">
+                                <path
+                                    d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
+                            </svg>
+                        </li>
+                        <li class="p-1 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </li>
+                        <li class="p-1 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="w-full h-full flex flex-col justify-around text-white bg-slate-800">
+                <section class="flex flex-row px-2 pt-2">
+                    <div class="flex bg-blue-300 p-4 m-2">
+                        Dashboard
+                    </div>
+                    <div class="flex flex-grow bg-slate-600 p-4 m-2">
+                        Filters
+                    </div>
+                    <div class="flex bg-blue-300 p-4 m-2">
+                        Add widget
+                    </div>
+                </section>
+                <section class="flex flex-grow flex-row justify-stretch px-2 pb-2">
+                    <div class="w-1/2 flex flex-col"></div>
+                    <div class="w-1/2 flex flex-col"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
