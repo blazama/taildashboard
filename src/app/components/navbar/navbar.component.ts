@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  darkMode: boolean = false;
 
+  @HostBinding('class') get themeMode() {
+    return this.darkMode ? 'dark' : 'light';
+  }
+
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+  }
 }
