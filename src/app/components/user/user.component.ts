@@ -12,7 +12,7 @@ export class UserComponent implements OnInit, OnDestroy {
   data: Data;
   name: string;
   surname: string;
-  picture:string;
+  picture: string;
   private userSubscription: Subscription;
 
   constructor(private apiService: ApiService) { }
@@ -21,10 +21,16 @@ export class UserComponent implements OnInit, OnDestroy {
     this.getUserData();
   }
 
-  resetUser() {
+  /**
+   * Function to reset the user data 
+   */
+  resetUser(): void {
     this.getUserData()
   }
 
+  /**
+   * Function to get user data from the API
+   */
   getUserData() {
     if (this.userSubscription) {
       this.userSubscription.unsubscribe();

@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 @Component({
@@ -8,21 +8,19 @@ import { DarkModeService } from 'src/app/service/dark-mode.service';
 })
 export class NavbarComponent {
 
-  // @HostBinding('class') get themeMode() {
-  //   return this.darkMode ? 'dark' : 'light';
-  // }
-
-  // toggleDarkMode() {
-  //   this.darkMode = !this.darkMode;
-  // }
-
   constructor(private darkModeService: DarkModeService) {}
 
+  /**
+   * Toggle the dark mode using the darkModeService 
+   */
   toggleDarkMode() {
     this.darkModeService.toggleDarkMode();
   }
 
-  isDarkMode() {
+  /**
+   * Check if the dark mode is currently active using the darkModeService
+   */
+  isDarkMode(): boolean {
     return this.darkModeService.isDarkMode();
   }
 }
