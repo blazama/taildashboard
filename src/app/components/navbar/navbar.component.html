@@ -1,38 +1,50 @@
-<nav class="w-full flex flex-row bg-white dark:bg-slate-600 text-gray-400 border-b border-gray-400" [class.dark]="isDarkMode()" [class.light]="!isDarkMode()">
-    <div class="px-6 py-4 flex justify-between items-center border-r border-gray-400">
+<nav class="h-16 flex flex-row bg-white dark:bg-slate-600 text-gray-400 border-b border-gray-400"
+    [class.dark]="isDarkMode()" [class.light]="!isDarkMode()">
+    <div
+        class="w-1/6 flex items-center justify-center dark:text-white  border-0 border-r dark:border-gray-600 border-gray-200">
         <p class="text-gray-400 dark:text-white">Web Interface</p>
         <button class="ml-2 flex transition-transform hover:scale-125 align-middle" (click)="toggleDarkMode()">
             <span *ngIf="isDarkMode()">
                 <span class="material-icons">
                     light_mode
-                    </span>
+                </span>
             </span>
             <span *ngIf="!isDarkMode()">
                 <span class="material-icons">
                     dark_mode
-                    </span>
+                </span>
             </span>
         </button>
     </div>
-    <div class="px-6 flex items-center text-sm border-r border-gray-400">
-        <ul class="flex">
-            <li class="p-2 text-gray-400 dark:text-white">Popular</li>
-            <li class="p-2">For You</li>
-            <li class="p-2">Messages</li>
-        </ul>
+    <div
+        class="px-20 flex justify-center items-center space-x-8 border-0 border-r dark:border-gray-600 border-gray-200 text-sm">
+        <a href="#!">Popular</a>
+        <a href="#!">For You</a>
+        <a href="#!">Messages</a>
     </div>
-    <div class="flex items-center">
-        <div class="p-2">
-            <span class="material-icons">
-                search
-                </span>
-        </div>
-        <input type="text" class="w-full text-white bg-transparent border-none focus:border-transparen focus:ring-0"
+    <div class="px-4 flex items-center flex-1">
+        <span class="p-4 material-icons">
+            search
+        </span>
+        <input type="search"
+            class="w-full border-transparent dark:bg-slate-600 placeholder-gray-500 focus:border-transparent sm:text-sm focus-visible:outline-none"
             placeholder="Search Message">
     </div>
-    <div class="flex flex-grow justify-end items-center">
-        <div class="px-2">
-            <p>User Component</p>
+    <div class="ml-10 pr-4 flex items-center">
+        <div class="flex items-center space-x-8">
+            <span class="material-icons cursor-pointer">
+                notifications
+            </span>
+            <div class="flex items-center text-sm">
+                <div class="w-9 h-9 mr-6  rounded-full overflow-hidden">
+                    <img src="https://img.freepik.com/foto-gratis/mujer-joven-paseando-barrio_23-2149410288.jpg?size=626&ext=jpg&ga=GA1.2.1492124101.1691594921&semt=ais"
+                        alt="Avatar" class="w-full h-full object-cover">
+                </div>
+                <span>Pepe hogan</span>
+                <span class="material-icons">
+                    expand_more
+                </span>
+            </div>
         </div>
     </div>
 </nav>
