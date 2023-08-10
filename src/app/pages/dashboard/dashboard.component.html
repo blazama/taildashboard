@@ -1,28 +1,28 @@
-<div class="h-screen flex">
+<div class="flex h-screen ">
     <app-sidebar></app-sidebar>
-    <div class="w-screen flex flex-col">
+    <div class="w-full flex flex-col">
         <app-navbar></app-navbar>
         <div class="h-full flex flex-row">
             <aside
-                class="w-60 flex flex-col justify-between text-gray-400 text-sm dark:text-white bg-white dark:bg-slate-800 border-r border-gray-400">
+                class="w-1/5 h-full flex flex-col justify-between text-gray-500 text-sm dark:text-white bg-white dark:bg-slate-800 border-r border-gray-500">
                 <div class="p-4">
-                    <h3 class="mb-4 text-gray-400">Dashboards</h3>
+                    <h3 class="mb-4 text-gray-500">Dashboards</h3>
                     <ul>
-                        <li class="p-1">Messages</li>  
+                        <li class="p-1">Messages</li>
                         <li class="p-1 flex items-center justify-between">
                             <span class="mr-2">Notifications</span>
                             <div class="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                                <span class="">4</span>
-                              </div>
-                          </li>
+                                <span class="text-xs" >4</span>
+                            </div>
+                        </li>
                         <li class="p-1">Friends</li>
                         <li class="p-1">Messages</li>
                         <li class="p-1">Calendar</li>
                         <li class="p-1">Users</li>
                     </ul>
                 </div>
-                <div class="p-4 border-t border-gray-400">
-                    <h3 class="mb-4 text-gray-400">Contacts</h3>
+                <div class="p-4 border-t border-gray-500">
+                    <h3 class="mb-4 text-gray-500">Contacts</h3>
                     <div>
                         <div class="mb-4">
                             <div class="flex items-center mb-2">
@@ -68,7 +68,7 @@
                                         alt="Avatar" class="w-full h-full object-cover">
                                 </div>
                                 <div class="ml-2">
-                                    <span class="text-gray-400">El Enanito</span>
+                                    <span class="text-gray-500">El Enanito</span>
                                 </div>
                             </div>
                         </div>
@@ -79,14 +79,14 @@
                                         alt="Avatar" class="w-full h-full object-cover">
                                 </div>
                                 <div class="ml-2">
-                                    <span class="text-gray-400">Sophia Ver</span>
+                                    <span class="text-gray-500">Sophia Ver</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-4 border-t border-gray-400">
-                    <ul class="flex flex-row justify-between text-gray-400">
+                <div class="p-4 border-t border-gray-500">
+                    <ul class="flex flex-row justify-between text-gray-500">
                         <li class="p-1 dark:hover:text-white">
                             <span class="material-icons">
                                 people
@@ -106,34 +106,33 @@
                 </div>
             </aside>
             <main
-                class="w-full h-full flex flex-col justify-around text-gray-400 dark:text-white bg-gray-100 dark:bg-slate-800">
+                class="w-full flex flex-col justify-around text-gray-500 dark:text-white bg-gray-100 dark:bg-slate-800">
                 <section class="p-4 pt-6 flex flex-row">
                     <div class="flex flex-row justify-center items-center">
-                        <span class="material-icons mr-4">
+                        <span class="material-icons mr-4 dark:text-gray-500">
                             dashboard
                         </span>
                         <span>Dashboard</span>
                     </div>
                     <div class="flex flex-grow justify-center text-sm">
                         <ul class="flex flex-row justify-center items-center   bg-transparent  px-4  mr-5 mb-1 ">
-                            <li class="p-2 px-4 border border-solid border-gray-400 rounded-l-full"><a href="">Today</a>
+                            <li class="p-2 px-4 border border-solid border-gray-500 rounded-l-full"><a href="#!">Today</a>
                             </li>
-                            <li class="p-2 border-y border-r border-gray-400"><a href="">Week</a></li>
-                            <li class="p-2 border-y border-r border-gray-400"><a href="">Month</a></li>
-                            <li class="p-2 border-y border-gray-400"><a href="">Quarter</a></li>
-                            <li class="p-2 px-4 border  border-gray-400 rounded-r-full"><a href="">Year</a></li>
+                            <li class="p-2 border-y border-r border-gray-500"><a href="#!">Week</a></li>
+                            <li class="p-2 border-y border-r border-gray-500"><a href="#!">Month</a></li>
+                            <li class="p-2 border-y border-gray-500"><a href="#!">Quarter</a></li>
+                            <li class="p-2 px-4 border  border-gray-500 rounded-r-full"><a href="#!">Year</a></li>
                         </ul>
                         <div
-                            class="flex flex-row justify-center items-center bg-transparent border border-solid border-gray-400 px-4 rounded-full">
+                            class="flex flex-row justify-center items-center bg-transparent border border-solid border-gray-500 px-4 rounded-full">
                             <span class="material-icons mr-4">
                                 today
                             </span>
                             <span>24 Mar - 23 Apr 2019</span>
                         </div>
                     </div>
-
                     <button
-                        class="flex items-center border border-solid border-gray-400 hover:border-gray-500 hover:text-white text-sm px-4 py-2 rounded-full">
+                        class="flex items-center border border-solid border-gray-500 hover:border-gray-500 hover:text-white text-sm px-4 py-2 rounded-full">
                         <span class="material-icons mr-2">
                             add
                         </span>
@@ -144,14 +143,14 @@
                     <div class="w-1/2 flex flex-col">
                         <div class="flex flex-row">
                             <div class="p-4 m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
-                                <div class="w-full p-2 flex items-center justify-evenly">
+                                <div class="w-full p-2 flex items-center justify-between">
                                     <div class="flex flex-col">
                                         <p class="text-lg font-semibold">125.154</p>
-                                        <p class="text-sm">Visits</p>
+                                        <p class="text-xs pt-2">Visits</p>
                                     </div>
                                     <div class="text-center">
                                         <div
-                                            class="w-10 h-10 flex items-center justify-center text-white bg-blue-500 rounded-full">
+                                            class="w-10 h-10 flex items-center justify-center text-white rounded-full bg-gradient-to-br from-yellow-200 to-orange-500">
                                             <span class="material-icons">
                                                 account_circle
                                             </span>
@@ -163,11 +162,11 @@
                                 <div class="w-full flex items-center justify-evenly p-2">
                                     <div class="flex flex-col">
                                         <p class="text-lg font-semibold">125.154</p>
-                                        <p class="text-sm">Duration</p>
+                                        <p class="text-xs pt-2">Duration</p>
                                     </div>
                                     <div class="text-center">
                                         <div
-                                            class="w-10 h-10 flex items-center justify-center text-white bg-blue-500 rounded-full">
+                                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-pink-200 to-pink-600 rounded-full">
                                             <span class="material-icons">
                                                 schedule
                                             </span>
@@ -176,9 +175,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                        <div class="m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                            <div class="p-2 flex items-center justify-between text-sm">
+                                <h2>Sessions</h2>
+                                <div class="text-gray-500">
+                                    <span class="material-icons">
+                                        more_horiz
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300"></div>
+                            <div class="flex">
+                            </div>
                         </div>
-                        <div class="p-4 m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                        <div class="m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                            <div class="p-2 flex items-center justify-between text-sm">
+                                <h2>Conversion Rate</h2>
+                                <div class="text-gray-500">
+                                    <span class="material-icons">
+                                        more_horiz
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300"></div>
+                            <div class="p-4 flex-grow">
+                            </div>
                         </div>
                     </div>
                     <div class="w-1/2 flex flex-col">
@@ -187,11 +208,11 @@
                                 <div class="w-full p-2 flex items-center justify-evenly">
                                     <div class="flex flex-col">
                                         <p class="text-lg font-semibold">125.154</p>
-                                        <p class="text-sm">Bounce Rate</p>
+                                        <p class="text-xs pt-2">Bounce Rate</p>
                                     </div>
                                     <div class="text-center">
                                         <div
-                                            class="w-10 h-10 flex items-center justify-center text-white bg-blue-500 rounded-full">
+                                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-green-300 to-blue-500 rounded-full">
                                             <span class="material-icons">
                                                 bookmark
                                             </span>
@@ -203,11 +224,11 @@
                                 <div class="p-2 w-full flex items-center justify-evenly">
                                     <div class="flex flex-col">
                                         <p class="text-lg font-semibold">125.154</p>
-                                        <p class="text-sm">Pages per visit</p>
+                                        <p class="text-xs pt-2 ">Pages per visit</p>
                                     </div>
                                     <div class="text-center">
                                         <div
-                                            class="w-10 h-10 flex items-center justify-center text-white bg-blue-500 rounded-full">
+                                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-green-100 to-green-600 rounded-full">
                                             <span class="material-icons">
                                                 insert_drive_file
                                             </span>
@@ -216,13 +237,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                        <div class="m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                            <div class="p-2 flex items-center justify-between text-sm">
+                                <h2>Traffic Sources</h2>
+                                <div class="text-gray-500">
+                                    <span class="material-icons">
+                                        more_horiz
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300"></div>
+                            <div class="flex-grow">
+                            </div>
                         </div>
-                        <div class="p-4 m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                        <div class="m-2 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                            <div class="p-2 flex items-center justify-between text-sm">
+                                <h2>Bounce Rate</h2>
+                                <div class="text-gray-500">
+                                    <span class="material-icons">
+                                        more_horiz
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-300"></div>
+                            <div class="flex">
+                            </div>
                         </div>
                     </div>
                 </section>
-            </main>
+            </main> 
         </div>
     </div>
 </div>
