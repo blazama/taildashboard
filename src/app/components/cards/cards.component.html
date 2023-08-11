@@ -1,0 +1,145 @@
+<section class="h-full  flex flex-grow flex-row">
+    <div class="w-1/2 flex flex-col">
+        <div class="flex flex-row">
+            <div class="m-3 p-4 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                <div class="w-full p-2 flex items-center justify-between">
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold">125.154</p>
+                        <p class="text-xs pt-2">Visits</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center text-white rounded-full bg-gradient-to-br from-yellow-200 to-orange-500">
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-3 p-4 flex-grow bg-white dark:bg-slate-600 shadow-md">
+                <div class="w-full flex items-center justify-evenly p-2">
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold">125.154</p>
+                        <p class="text-xs pt-2">Duration</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-pink-200 to-pink-600 rounded-full">
+                            <span class="material-icons">
+                                schedule
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-full justify-between m-3 bg-white dark:bg-slate-600 shadow-md">
+            <div class="p-2 flex items-center justify-between text-sm">
+                <h2>Sessions</h2>
+                <div class="text-gray-500">
+                    <span class="material-icons">
+                        more_horiz
+                    </span>
+                </div>
+            </div>
+            <hr class="border-gray-300">
+            <div class="mt-5">
+                <div class="w-4/6 m-auto overflow-hidden">
+                    <canvas data-te-chart="line" data-te-dataset-label="Sessions"
+                        data-te-labels="['Jul 14', '', '', '', '', '', '', '', 'Sep 14' , '', '', 'Jan 14' , '', '', '', 'Mar 14' , '', 'May 21']"
+                        data-te-dataset-data="[5, 20, 10, 20, 25, 35 ,5, 20, 10, 20, 25, 30, 5, 20, 10, 20, 25, 35, 20, 25, 30,5, 20, 10, 20, 25, 30, 5, 20]"
+                        data-te-dataset-border-color="#0676FF">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class=" m-3 bg-white dark:bg-slate-600 shadow-md">
+            <div class="p-2 flex items-center justify-between text-sm">
+                <h2>Conversion Rate</h2>
+                <div class="text-gray-500">
+                    <span class="material-icons">
+                        more_horiz
+                    </span>
+                </div>
+            </div>
+            <hr class="border-gray-300">
+            <div > 
+                <div class="w-4/6 p-2 mx-auto overflow-hidden">
+                    <canvas id="bar-chart-horizontal"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-full w-1/2 flex flex-col">
+        <div class="flex flex-row">
+            <div class="p-4 m-3 flex flex-grow bg-white dark:bg-slate-600 shadow-md">
+                <div class="w-full p-2 flex items-center justify-evenly">
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold">125.154</p>
+                        <p class="text-xs pt-2">Bounce Rate</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-green-300 to-blue-500 rounded-full">
+                            <span class="material-icons">
+                                bookmark
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 m-3 flex flex-grow bg-white dark:bg-slate-600 shadow-md">
+                <div class="p-2 w-full flex items-center justify-evenly">
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold">125.154</p>
+                        <p class="text-xs pt-2 ">Pages per visit</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center text-white bg-gradient-to-br from-green-100 to-green-600 rounded-full">
+                            <span class="material-icons">
+                                insert_drive_file
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-3 bg-white dark:bg-slate-600 shadow-md">
+            <div class="p-2 flex items-center justify-between text-sm">
+                <h2>Traffic Sources</h2>
+                <div class="text-gray-500">
+                    <span class="material-icons">
+                        more_horiz
+                    </span>
+                </div>
+            </div>
+            <hr class="border-gray-300">
+            <div>
+                <div class="w-2/6 mx-auto overflow-hidden">
+                    <canvas id="bar-chart-doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="m-3 h-full bg-white dark:bg-slate-600 shadow-md">
+            <div class="p-2 flex items-center justify-between text-sm">
+                <h2>Bounce Rate</h2>
+                <div class="text-gray-500">
+                    <span class="material-icons">
+                        more_horiz
+                    </span>
+                </div>
+            </div>
+            <hr class="border-gray-300">
+            <div class="p-2 mt-2 flex justify-center">
+                <div class="w-4/6 m-auto overflow-hidden">
+                    <canvas data-te-chart="line" data-te-dataset-label="Bounce"
+                        data-te-labels="['Jul 14', 'Sep 14' , 'Jan 14' , 'Mar 14' , 'May 21']"
+                        data-te-dataset-data="[5, 20, 10, 20, 25, 30]" data-te-dataset-border-color="#41EB99">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
