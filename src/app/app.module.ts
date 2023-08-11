@@ -8,6 +8,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UserComponent } from './components/user/user.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { FiltersComponent } from './components/filters/filters.component';
+import { AsideComponent } from './components/aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { UserComponent } from './components/user/user.component';
     DashboardComponent,
     SidebarComponent,
     NavbarComponent,
-    UserComponent
+    UserComponent,
+    CardsComponent,
+    FiltersComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

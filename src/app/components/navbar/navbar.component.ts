@@ -13,6 +13,7 @@ export class NavbarComponent {
   /**
    * Toggle the dark mode using the darkModeService 
    */
+
   toggleDarkMode() {
     this.darkModeService.toggleDarkMode();
   }
